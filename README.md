@@ -43,4 +43,3 @@ If you find our work helpful in your research, please consider citing:
   year={2021}
 }
 ```
-```
