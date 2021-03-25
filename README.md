@@ -42,7 +42,7 @@ We provide scripts for different point cloud processing tasks:
 You can find the instructions for running these tasks in the above corresponding folders.
 
 ## Performance
-The following tables report the current performances on different tasks and datasets. ( __*__ denotes the backbone architecture)
+The following tables report the current performances on different tasks and datasets. ( __*__ denotes the backbone architectures)
 
 ### Object Classification on ModelNet40
 
@@ -67,7 +67,8 @@ The following tables report the current performances on different tasks and data
 
 ## Contact
 
-You are welcome to send pull requests or share some ideas with us. Contact information: Mutian Xu (mino1018@outlook.com) or Runyu Ding (ryding@eee.hku.hk).
+You are welcome to send pull requests or share some ideas with us. 
+Contact information: Mutian Xu (mino1018@outlook.com) or Runyu Ding (ryding@eee.hku.hk).
 
 ## Acknowledgement
 
