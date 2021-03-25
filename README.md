@@ -36,10 +36,11 @@ Our code base is built on [PointWeb](https://github.com/hszhao/PointWeb).
 If you find our work helpful in your research, please consider citing:
 
 ```
-@inproceedings{xu2021paconv,
-  title={{PAConv}: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
+@article{xu2021paconv,
+  title={PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
   author={Xu, Mutian and Ding, Runyu and Zhao, Hengshuang and Qi, Xiaojuan},
-  booktitle={CVPR},
+  journal={IEEE Conference on Computer Vision and Pattern Recognition},
   year={2021}
 }
+```
 ```
