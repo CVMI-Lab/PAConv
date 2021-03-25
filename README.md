@@ -3,6 +3,7 @@
 
 by [Mutian Xu*](https://mutianxu.github.io/), [Runyu Ding*](), [Hengshuang Zhao](https://hszhao.github.io/), and [Xiaojuan Qi](https://xjqi.github.io/).
 
+
 ## Introduction
 This repository is built for the official implementation of:
 
@@ -20,14 +21,53 @@ If you find our work useful in your research, please consider citing:
 }
 ```
 
-## Tasks
+## Highlight
 
-We provide code to test PAConv in different point cloud processing tasks, including [Object Classification](), [Part Segmentation](), and [Semantic Segmentation]().
+* All initialization models and trained models are available.
+* Provide fast multiprocessing training ([nn.parallel.DistributedDataParallel](https://pytorch.org/docs/stable/_modules/torch/nn/parallel/distributed.html)) with official [nn.SyncBatchNorm](https://pytorch.org/docs/master/nn.html#torch.nn.SyncBatchNorm).
+* Incorporated with [tensorboardX](https://github.com/lanpa/tensorboardX) for better visualization of the whole training process.
+* Support recent versions of PyTorch.
+* Well designed code structures for easy reading and using.
 
+## Usage
+
+We provide scripts for different point cloud processing tasks:
+
+* [Object Classification]() task on Modelnet40.
+ 
+* [Shape Part Segmentation]() task on ShapeNetPart.
+ 
+* [Indoor Scene Segmentation]() task on S3DIS.
+
+You can find the instructions for running these tasks in the above corresponding folders.
 
 ## Performance
+The following tables report the current performances on different tasks and datasets. ( __*__ denotes the backbone architecture)
+
+### Object Classification on ModelNet40
+
+| Method | OA |
+| :--- | :---: |
+| PAConv _(*PointNet)_   | 93.2%|
+| PAConv _(*DGCNN)_      | **93.9%** |
+
+### Shape Part Segmentation on ShapeNet Part
+| Method |  Class mIoU | Instance mIoU |
+| :--- | :---: | :---: |
+| PAConv _(*DGCNN)_    | **84.6%** | **86.1%** |
 
 
+
+### Indoor Scene Segmentation on S3DIS Area-5
+
+| Method |  S3DIS mIoU  |
+| :--- | :---: |
+| PAConv _(*PointNet++)_| **66.58%** |
+
+
+## Contact
+
+You are welcome to send pull requests or share some ideas with us. Contact information: Mutian Xu (mino1018@outlook.com) or Runyu Ding (ryding@eee.hku.hk).
 
 ## Acknowledgement
 
