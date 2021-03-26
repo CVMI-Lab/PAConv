@@ -33,11 +33,11 @@ If you find our work useful in your research, please consider citing:
 
 We provide scripts for different point cloud processing tasks:
 
-* [Object Classification]() task on Modelnet40.
+* [Object Classification](./obj_cls) task on Modelnet40.
  
-* [Shape Part Segmentation]() task on ShapeNetPart.
+* [Shape Part Segmentation](./part_seg) task on ShapeNetPart.
  
-* [Indoor Scene Segmentation]() task on S3DIS.
+* [Indoor Scene Segmentation](./scene_seg) task on S3DIS.
 
 You can find the instructions for running these tasks in the above corresponding folders.
 
@@ -67,8 +67,7 @@ The following tables report the current performances on different tasks and data
 
 ## Contact
 
-You are welcome to send pull requests or share some ideas with us. 
-Contact information: Mutian Xu (mino1018@outlook.com) or Runyu Ding (ryding@eee.hku.hk).
+You are welcome to send pull requests or share some ideas with us. Contact information: Mutian Xu (mino1018@outlook.com) or Runyu Ding (ryding@eee.hku.hk).
 
 ## Acknowledgement
 
