@@ -38,6 +38,8 @@ ln -s /path to modelnet40/modelnet40_ply_hdf5_2048 data
 
 * Test:
 
+  * Download our [pretrained model](https://drive.google.com/drive/folders/1eDBpIRt4iSCjEw2-Mk2G3gz7YwA6VfEB?usp=sharing) and put it under the [obj_cls](/obj_cls) folder.
+
   * Run the voting evaluation script to test our pretrained model, after this voting you will get an accuracy of 93.9% if all things go right:
   
     `python eval_voting.py --config config/dgcnn_paconv_test.yaml`

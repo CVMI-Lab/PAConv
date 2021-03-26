@@ -36,7 +36,7 @@ ln -s /path to shapenet part/shapenetcore_partanno_segmentation_benchmark_v0_nor
 
 
 * Test:
-  * Download our [pretrained models](https://drive.google.com/drive/folders/10UAEjEIZLjnUndyORygwAW289kW9xMc7?usp=sharing) and put them under the project folder.
+  * Download our [pretrained model](https://drive.google.com/drive/folders/1mIahmPMeCdX5WyUOGa0IrdEtBEzBUa67?usp=sharing) and put it under the [part_seg](/part_seg) folder.
 
   * Run the voting evaluation script to test our pretrained models, after this voting you will get an instance mIoU of 86.1% if all things go right:
   
