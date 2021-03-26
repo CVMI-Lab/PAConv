@@ -6,7 +6,7 @@ by Mutian Xu\*, Runyu Ding*, Hengshuang Zhao, and Xiaojuan Qi, details are in [p
 
 This repository is build for PAConv in point cloud scene understanding.
 
-<img src="../figure/paconv.jpg" width="900"/>
+<img src="../figure/semseg_vis.jpg" width="900"/>
 
 
 ## Tasks
