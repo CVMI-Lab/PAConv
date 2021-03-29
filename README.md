@@ -7,7 +7,7 @@ by [Mutian Xu*](https://mutianxu.github.io/), [Runyu Ding*](), [Hengshuang Zhao]
 ## Introduction
 This repository is built for the official implementation of:
 
-__PAConv__: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds ___(CVPR2021)___ [[arXiv]()]
+__PAConv__: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds ___(CVPR2021)___ [[arXiv](https://arxiv.org/abs/2103.14635)]
 <br>
 
 If you find our work useful in your research, please consider citing:
