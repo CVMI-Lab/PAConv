@@ -200,7 +200,7 @@ def train(train_loader, model, criterion, optimizer, epoch, correlation_loss):
         if correlation_loss:
             for m in model.module.SA_modules.named_modules():
                 if isinstance(m[-1], PAConv):
-                    kernel_matrice, output_dim, m_dim = m[-1].matrice1, m[-1].output_dim, m[-1].m1
+                    kernel_matrice, output_dim, m_dim = m[-1].weightbank, m[-1].output_dim, m[-1].m
                     new_kernel_matrice = kernel_matrice.view(-1, m_dim, output_dim).permute(1, 0, 2).reshape(m_dim, -1)
                     cost_matrice = torch.matmul(new_kernel_matrice, new_kernel_matrice.T) / torch.matmul(
                         torch.sqrt(torch.sum(new_kernel_matrice ** 2, dim=-1, keepdim=True)),
