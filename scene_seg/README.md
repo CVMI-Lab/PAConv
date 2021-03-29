@@ -36,9 +36,9 @@
      sh tool/train.sh s3dis pointnet2_paconv_cuda              # cuda version
      ```
    
-   We also provide pretrained models. One is implemented by CUDA mIoU=66.01(w/o voting) and the other achieves  66.33 mIoU (w/o voting) in s3dis Area-5 validation set.
+   We also provide pretrained models. One uses CUDA-implemented PAConv which achieves [66.01](https://drive.google.com/drive/folders/1AacPodXqK6OO-IGnVd1pPLx7pNMMhzW0) mIoU (w/o voting) and the other uses vanilla PAConv which achieves [66.33](https://drive.google.com/drive/folders/1h-ZusRArRpB-8T9lZe3FRYZJA3Hm7_ua) mIoU (w/o voting) in s3dis Area-5 validation set.
 
-4. Test:
+3. Test:
 
    - Download trained segmentation models and put them under folder specified in config or modify the specified paths.
 
