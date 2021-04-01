@@ -13,10 +13,10 @@ __PAConv__: Position Adaptive Convolution with Dynamic Kernel Assembling on Poin
 If you find our work useful in your research, please consider citing:
 
 ```
-@article{xu2021paconv,
+@inproceedings{xu2021paconv,
   title={PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
   author={Xu, Mutian and Ding, Runyu and Zhao, Hengshuang and Qi, Xiaojuan},
-  journal={IEEE Conference on Computer Vision and Pattern Recognition},
+  booktitle={CVPR},
   year={2021}
 }
 ```

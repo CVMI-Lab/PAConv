@@ -67,8 +67,8 @@ Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/fold
 If you find our work helpful in your research, please consider citing:
 
 ```
-@inproceedings{xu2020paconv,
-  title={{PAConv}: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
+@inproceedings{xu2021paconv,
+  title={PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
   author={Xu, Mutian and Ding, Runyu and Zhao, Hengshuang and Qi, Xiaojuan},
   booktitle={CVPR},
   year={2021}

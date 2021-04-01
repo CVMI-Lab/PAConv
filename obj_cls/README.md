@@ -63,10 +63,10 @@ ln -s /path to modelnet40/modelnet40_ply_hdf5_2048 data
 ## Citation
 If you find the code or trained models useful, please consider citing:
 ```
-@article{xu2021paconv,
+@inproceedings{xu2021paconv,
   title={PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds},
   author={Xu, Mutian and Ding, Runyu and Zhao, Hengshuang and Qi, Xiaojuan},
-  journal={IEEE Conference on Computer Vision and Pattern Recognition},
+  booktitle={CVPR},
   year={2021}
 }
 ```
