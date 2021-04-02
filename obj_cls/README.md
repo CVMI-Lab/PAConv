@@ -5,7 +5,11 @@
 
 ### Requirements
 * Hardware: 1 GPU to hold 6000M
-* Software: Linux (tested on Ubuntu 16.04), Python 3, PyTorch 1.5+, CUDA 10.1+
+* Software: 
+  Linux (tested on Ubuntu 18.04)
+  PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX
+  h5py, pyYaml, scikit-learn
+
 
 ### Dataset
 Download and unzip [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip) (415M). Then symlink the paths to it as follows (you can alternatively modify the path [here](https://github.com/CVMI-Lab/PAConv/blob/main/obj_cls/util/data_util.py#L10)):
