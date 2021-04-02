@@ -47,7 +47,19 @@ Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/fold
      CUDA_VISIBLE_DEVICES=0 sh tool/test.sh s3dis pointnet2_paconv        # non-cuda version
      CUDA_VISIBLE_DEVICES=0 sh tool/test.sh s3dis pointnet2_paconv_cuda   # cuda version
      ```
-
+    
+   - For 6-fold validation (calculating the metrics with results from different folds merged): 
+     1) Change the [test_area index](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/config/s3dis/s3dis_pointnet2_paconv.yaml#L7) in the config file to 1;
+     2) Finish full train and test, the test result files of Area-1 will be saved in corresponding paths after the test;
+     3) Repeat a,b by changing the [test_area index](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/config/s3dis/s3dis_pointnet2_paconv.yaml#L7) to 2,3,4,5,6 respectively;
+     4) Collect all the test result files of all areas to one directory and state the path to this directory [here](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/tool/test_s3dis_6fold.py#L52);
+     5) Run the code for 6-fold validation to get the final 6-fold results:
+        ```shell
+        python test_s3dis_6fold.py
+        ```
+        
+    
+   
 [comment]: <> (5. Visualization: [tensorboardX]&#40;https://github.com/lanpa/tensorboardX&#41; incorporated for better visualization.)
 
 [comment]: <> (   ```shell)
