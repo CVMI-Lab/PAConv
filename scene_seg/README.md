@@ -39,7 +39,7 @@
 3. Test:
 
    - Download [pretrained models](https://drive.google.com/drive/mobile/folders/10UAEjEIZLjnUndyORygwAW289kW9xMc7/1z5cRUG5d01d78rShJ2qbePMJqqiWzo4d/1zpmr_ircZduiVWDEe8yC-zQ1AfIn4GZF?usp=sharing&sort=13&direction=a) and put them under folder specified in config or modify the specified paths. 
-Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/folders/1AacPodXqK6OO-IGnVd1pPLx7pNMMhzW0) mIoU (w/o voting) and vanilla PAConv without CUDA achieves [66.33](https://drive.google.com/drive/folders/1h-ZusRArRpB-8T9lZe3FRYZJA3Hm7_ua) mIoU (w/o voting) in s3dis Area-5 validation set.
+Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/folders/1h-ZusRArRpB-8T9lZe3FRYZJA3Hm7_ua) mIoU (w/o voting) and vanilla PAConv without CUDA achieves [66.33](https://drive.google.com/drive/folders/1AacPodXqK6OO-IGnVd1pPLx7pNMMhzW0) mIoU (w/o voting) in s3dis Area-5 validation set.
 
    - For full testing (get listed performance):
 
