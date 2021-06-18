@@ -9,8 +9,7 @@
 ### Requirements
    - Hardware: 1 GPU
    - Software: 
-      PyTorch>=1.5.0, Python>=3, CUDA>=10.2, tensorboardX
-      tqdm, h5py, pyYaml
+      PyTorch>=1.5.0, Python>=3, CUDA>=10.2, tensorboardX, tqdm, h5py, pyYaml
 
 ### Dataset
 - Download S3DIS [dataset](https://drive.google.com/drive/folders/12wLblskNVBUeryt1xaJTQlIoJac2WehV) and symlink the paths to them as follows (you can alternatively modify the relevant paths specified in folder `config`):

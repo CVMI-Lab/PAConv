@@ -7,8 +7,7 @@
 * Hardware: 1 GPU to hold 6000M
 * Software: 
   Linux (tested on Ubuntu 18.04)
-  PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX
-  h5py, pyYaml, scikit-learn
+  PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX, h5py, pyYaml, scikit-learn
 
 
 ### Dataset

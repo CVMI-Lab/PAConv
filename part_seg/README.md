@@ -8,8 +8,7 @@
 * Hardware: GPUs to hold 14000MB
 * Software: 
   Linux (tested on Ubuntu 18.04)
-  PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX
-  tqdm, pyYaml
+  PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX, tqdm, pyYaml
 
 ### Dataset
 Download and unzip [ShapeNet Part](https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip) (674M). Then symlink the paths to it as follows (you can alternatively modify the path [here](https://github.com/CVMI-Lab/PAConv/blob/main/part_seg/util/data_util.py#L20)):
