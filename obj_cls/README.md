@@ -4,7 +4,7 @@
 ## Installation
 
 ### Requirements
-* Hardware: 1 GPU to hold 6000M
+* Hardware: GPU to hold 6000M. (Better with two gpus or higher-level gpu to satisfy the need of paralleled cuda_kernels.)
 * Software: 
   Linux (tested on Ubuntu 18.04)
   PyTorch>=1.5.0, Python>=3, CUDA>=10.1, tensorboardX, h5py, pyYaml, scikit-learn
