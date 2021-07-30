@@ -72,15 +72,15 @@ def main_process():
 
 def weight_init(m):
     if isinstance(m, torch.nn.Linear):
-        torch.nn.init.xavier_normal_(m.weight)
+        torch.nn.init.kaiming_normal_(m.weight)
         if m.bias is not None:
             torch.nn.init.constant_(m.bias, 0)
     elif isinstance(m, torch.nn.Conv2d):
-        torch.nn.init.xavier_normal_(m.weight)
+        torch.nn.init.kaiming_normal_(m.weight)
         if m.bias is not None:
             torch.nn.init.constant_(m.bias, 0)
     elif isinstance(m, torch.nn.Conv1d):
-        torch.nn.init.xavier_normal_(m.weight)
+        torch.nn.init.kaiming_normal_(m.weight)
         if m.bias is not None:
             torch.nn.init.constant_(m.bias, 0)
     elif isinstance(m, torch.nn.BatchNorm2d):
