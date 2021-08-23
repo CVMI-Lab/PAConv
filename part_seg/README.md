@@ -15,10 +15,10 @@ Download and unzip [ShapeNet Part](https://shapenet.cs.stanford.edu/media/shapen
 ``` 
 mkdir -p data
 ln -s /path to shapenet part/shapenetcore_partanno_segmentation_benchmark_v0_normal data
-``` 
+```
 
 ## Usage
-   
+
 * Build the CUDA kernel: 
 
     When you run the program for the first time, please wait a few moments for compiling the [cuda_lib](./cuda_lib) **automatically**.
@@ -33,7 +33,7 @@ ln -s /path to shapenet part/shapenetcore_partanno_segmentation_benchmark_v0_nor
 
 
    * We also provide a fast **multi-process training** ([nn.parallel.DistributedDataParallel](https://pytorch.org/docs/stable/_modules/torch/nn/parallel/distributed.html), **recommended**) with official [nn.SyncBatchNorm](https://pytorch.org/docs/master/nn.html#torch.nn.SyncBatchNorm). Please also remind to specify the GPU ID:
-    
+        
      * `CUDA_VISIBLE_DEVICES=x,x python main_ddp.py --config config/dgcnn_paconv_train.yaml` (Embed PAConv into [DGCNN](https://arxiv.org/abs/1801.07829))
 
 
@@ -54,13 +54,13 @@ ln -s /path to shapenet part/shapenetcore_partanno_segmentation_benchmark_v0_nor
     * Make sure to use **[main.py](main.py)** (main_ddp.py may lead to wrong result due to the repeating problem of all_reduce function in multi-process training) :
     
       `python main.py --config config/your config file.yaml`
-      
+    
   * You can choose to test the model with the best instance mIoU, class mIoU or accuracy, by specifying `model_type` to `insiou`, `clsiou` or `acc` in the test config file.
-      
+  
 * Visualization: [tensorboardX](https://github.com/lanpa/tensorboardX) incorporated for better visualization.
 
    `tensorboard --logdir=checkpoints/exp_name`
-    
+   
     
 ## Citation
 If you find the code or trained models useful, please consider citing:

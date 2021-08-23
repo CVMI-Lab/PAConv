@@ -15,10 +15,10 @@ Download and unzip [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet4
 ``` 
 mkdir -p data
 ln -s /path to modelnet40/modelnet40_ply_hdf5_2048 data
-``` 
+```
 
 ## Usage
-   
+
 * Build the CUDA kernel: 
 
     When you run the program for the first time, please wait a few moments for compiling the [cuda_lib](./cuda_lib) **automatically**.
@@ -30,11 +30,11 @@ ln -s /path to modelnet40/modelnet40_ply_hdf5_2048 data
    * Multi-thread training ([nn.DataParallel](https://pytorch.org/docs/stable/nn.html#dataparallel)) :
 
      * `python main.py --config config/dgcnn_paconv_train.yaml` (Embed PAConv into [DGCNN](https://arxiv.org/abs/1801.07829))
-  
+    
      * `python main.py --config config/pointnet_paconv_train.yaml` (Embed PAConv into [PointNet](https://arxiv.org/abs/1612.00593))
 
    * We also provide a fast **multi-process training** ([nn.parallel.DistributedDataParallel](https://pytorch.org/docs/stable/_modules/torch/nn/parallel/distributed.html), **recommended**) with official [nn.SyncBatchNorm](https://pytorch.org/docs/master/nn.html#torch.nn.SyncBatchNorm). Please also remind to specify the GPU ID:
-    
+   
      * `CUDA_VISIBLE_DEVICES=x,x python main_ddp.py --config config/dgcnn_paconv_train.yaml` (Embed PAConv into [DGCNN](https://arxiv.org/abs/1801.07829))
      * `CUDA_VISIBLE_DEVICES=x,x python main_ddp.py --config config/pointnet_paconv_train.yaml` (Embed PAConv into [PointNet](https://arxiv.org/abs/1612.00593))
 
@@ -57,11 +57,11 @@ ln -s /path to modelnet40/modelnet40_ply_hdf5_2048 data
     * Make sure to use **[main.py](main.py)** (main_ddp.py may lead to wrong result due to the repeating problem of all_reduce function in multi-process training) :
     
       `python main.py --config config/your config file.yaml`
-      
+  
 * Visualization: [tensorboardX](https://github.com/lanpa/tensorboardX) incorporated for better visualization.
 
    `tensorboard --logdir=checkpoints/exp_name`
-    
+   
     
 ## Citation
 If you find the code or trained models useful, please consider citing:
@@ -83,5 +83,4 @@ You are welcome to send pull requests or share some ideas with us. Contact infor
 This code is is partially borrowed from [DGCNN](https://github.com/WangYueFt/dgcnn).  
 
 
- 
 
