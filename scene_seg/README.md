@@ -54,8 +54,9 @@ Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/fold
      4) Collect all the test result files of all areas to one directory and state the path to this directory [here](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/tool/test_s3dis_6fold.py#L52);
      5) Run the code for 6-fold validation to get the final 6-fold results:
         ```shell
-        python test_s3dis_6fold.py
+        python tool/test_s3dis_6fold.py
         ```
+   - The code for visualizing the segmentation result are also incorporated in [_test_s3dis_6fold.py_](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/tool/test_s3dis_6fold.py) (called at line #55-#57).
         
     
    
