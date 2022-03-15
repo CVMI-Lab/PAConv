@@ -56,7 +56,7 @@ Our CUDA-implemented PAConv achieves [66.01](https://drive.google.com/drive/fold
         ```shell
         python tool/test_s3dis_6fold.py
         ```
-   - The code for visualizing the segmentation result are also incorporated in [_test_s3dis_6fold.py_](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/tool/test_s3dis_6fold.py) (called at line #55-#57).
+   - The code for visualizing the segmentation result is also incorporated in [_test_s3dis_6fold.py_](https://github.com/CVMI-Lab/PAConv/blob/main/scene_seg/tool/test_s3dis_6fold.py) (called at line #55-#57).
         
     
    
