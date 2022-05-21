@@ -51,7 +51,7 @@ The following tables report the current performances on different tasks and data
 | PAConv _(*PointNet)_   | 93.2%|
 | PAConv _(*DGCNN)_      | **93.9%** |
 
-### Object Classification under Corruptions on ModelNet-C.
+### Object Classification under Corruptions on [ModelNet-C](https://github.com/jiawei-ren/ModelNet-C).
 | Method |  mCE | Clean OA |
 | :--- | :---: | :---: |
 | PAConv _(*DGCNN)_    | **1.104** | **0.936** |
@@ -85,4 +85,4 @@ Our code base is partially borrowed from [PointWeb](https://github.com/hszhao/Po
 
 Our method is officially supported by [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) for indoor scene segmentation.
 
-PAConv got competitive performance on [ModelNet-C](https://github.com/jiawei-ren/ModelNet-C) dataset for object classification under corruptions.
+PAConv gets competitive performance on [ModelNet-C](https://github.com/jiawei-ren/ModelNet-C) dataset for object classification under corruptions.
