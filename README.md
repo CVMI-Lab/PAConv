@@ -85,4 +85,4 @@ Our code base is partially borrowed from [PointWeb](https://github.com/hszhao/Po
 
 Our method is officially supported by [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) for indoor scene segmentation.
 
-We got competitive performance on [ModelNet-C](https://github.com/jiawei-ren/ModelNet-C) dataset for object classification under corruptions.
+PAConv got competitive performance on [ModelNet-C](https://github.com/jiawei-ren/ModelNet-C) dataset for object classification under corruptions.
