@@ -79,4 +79,4 @@ You are welcome to send pull requests or share some ideas with us. Contact infor
 
 
 ## Acknowledgement
-This code is is partially borrowed from [DGCNN](https://github.com/WangYueFt/dgcnn) and [PointNet++](https://github.com/charlesq34/pointnet2).
+This code is partially borrowed from [DGCNN](https://github.com/WangYueFt/dgcnn) and [PointNet++](https://github.com/charlesq34/pointnet2).
