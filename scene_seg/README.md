@@ -6,7 +6,7 @@
 
 ## Dataset
 
-- Download S3DIS [dataset](https://drive.google.com/drive/folders/12wLblskNVBUeryt1xaJTQlIoJac2WehV) and symlink the paths to them as follows (you can alternatively modify the relevant paths specified in folder `config`):
+- Download S3DIS [dataset](https://drive.google.com/file/d/1LyoO9VUVRkzZl0QQ017e8EPfmRj9qd5-/view?usp=sharing) and symlink the paths to them as follows (you can alternatively modify the relevant paths specified in folder `config`):
     ```
      mkdir -p dataset
      ln -s /path_to_s3dis_dataset dataset/s3dis
